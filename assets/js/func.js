@@ -1,5 +1,5 @@
 let puntos = 0;
-let puntosNecesarios = 20;
+let puntosNecesarios = 30;
 let segundos = 10;
 
 document.getElementById("tiempo").textContent = segundos;
