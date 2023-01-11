@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="./assets/styles/main.css">
+	<!-- SEO -->
+	<meta name="author" content="https://linktr.ee/luccasassa" />
+	<meta
+		name="description"
+		content="Luca's little projects. If you found this content useful, please tap the ♥️ icon and give me a follow. Thanks ☺️"
+	/>
 
-	<title>Presición Mouse</title>
+	<!-- FAVICON -->
+	<link rel="icon" href="https://i.imgur.com/l6Z1OOF.png" />
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./styles.css" />
+	<link rel="stylesheet" href="./template.css" />
+
+	<!-- TITLE -->
+	<title>Presition Game</title>
 </head>
 
 <body>
@@ -19,11 +31,30 @@
 		</div>
 
 		<div class="game">
-			<div class="bot"><span>+</span></div>
+			<div class="bot"></div>
 		</div>
 	</div>
 
-	<script src="./assets/js/func.js"></script>
+	<!-- SCRIPTS -->
+	<script src="./scripts.js"></script>
+
+	<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				var div = document.createElement("div");
+				div.innerHTML = this.responseText;
+				document.body.appendChild(div);
+			}
+		};
+
+		xhttp.open(
+			"GET",
+			"https://raw.githubusercontent.com/luccasassa/API-REST/main/watermark.html",
+			true
+		);
+		xhttp.send();
+	</script>
 </body>
 
 </html>

@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+:root {
+  --pwhite: #fff;
+  --pblack: #000;
+  --pgrey: #333;
+  --poppins: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pwhite);
+}
+
+.template-corner {
+  position: fixed;
+  color: var(--pwhite);
+  width: 1000px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 99999999;
+  font-family: var(--poppins);
+  user-select: none;
+}
+
+.template-corner.template-top.template-left {
+  top: -12px;
+  left: -472px;
+  transform: rotateZ(-45deg);
+}
+
+.template-corner.template-top.template-right {
+  top: -12px;
+  right: -472px;
+  transform: rotateZ(45deg);
+}
+
+.template-corner.template-bottom.template-left {
+  bottom: -12px;
+  left: -472px;
+  transform: rotateZ(45deg);
+}
+
+.template-corner.template-bottom.template-right {
+  bottom: -12px;
+  right: -472px;
+  transform: rotateZ(-45deg);
+}
+
+.template-corner .template-title {
+  position: relative;
+  z-index: 999999999999999;
+  background: #866baf;
+  height: 80px;
+  line-height: 120px;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  display: block;
+  opacity: 0.5;
+  transition: 0.2s;
+  transition-delay: 1.2s;
+}
+
+.template-corner .template-title:hover:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.template-corner .template-title .template-icon {
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  left: 50%;
+  font-size: 26px;
+  transform: translateX(-50%);
+}
+
+.template-corner .template-links {
+  position: relative;
+  top: -42px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s;
+  transition-delay: 1s;
+}
+
+.template-corner .template-links .template-link {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.2s;
+  transition-delay: 1s;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  background: var(--pgrey);
+  color: var(--pwhite);
+  font-weight: 600;
+  height: 41px;
+  box-sizing: border-box;
+}
+
+.template-corner .template-links .template-link:hover:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.template-corner .template-links .template-link span {
+  opacity: 0;
+  transition: all 0s;
+  position: relative;
+  transform: translateX(-275px) translate3D(0, 0, 0);
+  display: inline-block;
+  transition: all 0.2s;
+  transition-delay: 0.6s;
+}
+
+.template-corner.template-bottom .template-icon {
+  top: 35px;
+}
+
+.template-corner.template-bottom .template-title {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  line-height: 40px;
+}
+
+.template-corner.template-bottom .template-links {
+  top: -50px;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.template-corner:hover .template-title {
+  -webkit-animation: none;
+  animation: none;
+  transition-delay: 0s;
+  opacity: 1;
+}
+
+.template-corner:hover .template-links {
+  transition-delay: 0s;
+  opacity: 1;
+}
+
+.template-corner:hover .template-links .template-link {
+  transform: translateX(-50%);
+  transition-delay: 0s;
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(1) {
+  transform: translate3D(0px, 40px, 0);
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(1) span {
+  transition-delay: 0.2s;
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(2) {
+  transform: translate3D(0px, 80px, 0);
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(2) span {
+  transition-delay: 0.4s;
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(3) {
+  transform: translate3D(0px, 120px, 0);
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(3) span {
+  transition-delay: 0.6s;
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(4) {
+  transform: translate3D(0px, 160px, 0);
+}
+
+.template-corner:hover .template-links .template-link:nth-of-type(4) span {
+  transition-delay: 0.8s;
+}
+
+.template-corner:hover .template-links .template-link span {
+  opacity: 1;
+  transition: 0.2s;
+  -webkit-animation: none;
+  animation: none;
+  transform: translateX(0px);
+}
+
+.template-corner.template-small .template-title {
+  font-size: 13px;
+  line-height: 25px;
+  transition-delay: 0s;
+  height: 50px;
+}
+
+.template-corner.template-small .template-title .template-icon {
+  font-size: 18px;
+  top: 21px;
+}
+
+.template-corner.template-small.template-top.template-left {
+  top: -12px;
+  left: -481px;
+  transform: rotateZ(-45deg);
+}
+
+.template-corner.template-small.template-top.template-right {
+  top: -12px;
+  right: -481px;
+  transform: rotateZ(45deg);
+}
+
+.template-corner.template-small.template-bottom.template-left {
+  bottom: -8px;
+  left: -481px;
+  transform: rotateZ(45deg);
+}
+
+.template-corner.template-small.template-bottom.template-right {
+  bottom: -8px;
+  right: -481px;
+  transform: rotateZ(-45deg);
+}
