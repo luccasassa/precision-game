@@ -1,3 +1,8 @@
+* {
+	font-family: var(--poppins);
+	user-select: none;
+}
+
 body {
 	display: flex;
 	height: 100vh;
@@ -15,6 +20,7 @@ div,body,p {
 	margin: auto;
 	box-shadow: 0px 0px 15px #000;
 	border: 2px solid #000;
+	cursor: crosshair;
 }
 
 .game-info {
