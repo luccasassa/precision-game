@@ -1,6 +1,6 @@
 const d = document;
 let puntos = 0;
-let puntosNecesarios = 25;
+let puntosNecesarios = 20;
 let segundos = 10;
 
 d.getElementById("tiempo").textContent = segundos;
