@@ -6,7 +6,7 @@ let segundos = 10;
 d.getElementById("tiempo").textContent = segundos;
 
 const sumarPuntos = () => {
-	if (puntos >= puntosNecesarios) {
+	if (puntos == puntosNecesarios) {
 		alert("BUEN AIM PAPU\n" + 
 		'VA DE NUEVOOOO');
 
